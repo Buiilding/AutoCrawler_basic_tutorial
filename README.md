@@ -2,7 +2,7 @@
 
 Git clone auto crawl image is an automated tool for finding images by keywords.
 
-Step 1 : Download git 
+# Step 1 : Download git 
 
 For Windows : https://github.com/git-for-windows/git/releases/download/v2.39.0.windows.2/Git-2.39.0.2-64-bit.exe
 
@@ -31,31 +31,31 @@ $ brew install git-gui
 
 For Linux :
 
-# apt-get install git
+ apt-get install git
 For Ubuntu, this PPA provides the latest stable upstream Git version
 
-# add-apt-repository ppa:git-core/ppa # apt update; apt install git
+ add-apt-repository ppa:git-core/ppa # apt update; apt install git
 Fedora
-# yum install git (up to Fedora 21)
-# dnf install git (Fedora 22 and later)
+ yum install git (up to Fedora 21)
+ dnf install git (Fedora 22 and later)
 Gentoo
-# emerge --ask --verbose dev-vcs/git
+ emerge --ask --verbose dev-vcs/git
 Arch Linux
-# pacman -S git
+ pacman -S git
 openSUSE
-# zypper install git
+ zypper install git
 Mageia
-# urpmi git
+ urpmi git
 Nix/NixOS
-# nix-env -i git
+ nix-env -i git
 FreeBSD
-# pkg install git
+ pkg install git
 Solaris 9/10/11 (OpenCSW)
-# pkgutil -i git
+ pkgutil -i git
 Solaris 11 Express
-# pkg install developer/versioning/git
+ pkg install developer/versioning/git
 OpenBSD
-# pkg_add git
+ pkg_add git
 Alpine
 $ apk add git
 Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.
