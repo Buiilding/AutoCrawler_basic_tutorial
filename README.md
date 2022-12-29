@@ -66,7 +66,7 @@ $ tazpkg get-install git
 
 
 
-Step 2 : Create a new folder named datatools
+# Step 2 : Create a new folder named datatools
 
 
 
