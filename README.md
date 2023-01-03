@@ -80,7 +80,7 @@ Command : git clone pip https://github.com/YoongiKim/AutoCrawler.git
 
 # Step 3 : Install all of the requirements.txt
 
-Command : pip install -r requirements.txt 
+- Command : pip install -r requirements.txt 
 
 # Step 4 : Hop into VScode and open keywords.txt
 
@@ -88,7 +88,7 @@ Command : pip install -r requirements.txt
 
 # Step 5 : Hop back into terminal and run main.py
 
-Command: python main.py
+- Command: python main.py
 
 
 
