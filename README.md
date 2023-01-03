@@ -82,7 +82,11 @@ Command : git clone pip https://github.com/YoongiKim/AutoCrawler.git
 
 - Command : pip install -r requirements.txt 
 
-# Step 4 : Hop into VScode and open keywords.txt
+# Step 4 : Hop into VScode 
+
+- Open AutoCrawler folder
+
+- Open keywords.txt
 
 - Enter the keyword that you want the tool to autosearch and press save
 
