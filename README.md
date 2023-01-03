@@ -66,11 +66,11 @@ $ tazpkg get-install git
 
 # Step 2 : Open terminal 
 
-# Step 3 : Create a new folder named datatools
+ 1: Create a new folder named datatools
 
-# Step 4: cd , forward to the datatools driver
+ 2: cd , forward to the datatools driver
 
-# Step 5 : download the link below
+ 3: download the link below
 
 -  https://github.com/YoongiKim/AutoCrawler.git
 
@@ -78,15 +78,15 @@ Command : git clone pip <link>
 
 - Once you have done that, a Folder named AutoCrawler can be seen
 
-# Step 5 : Install all of the requirements.txt
+# Step 3 : Install all of the requirements.txt
 
 Command : pip install -r requirements.txt 
 
-# Step 6 : Hop into VScode and open keywords.txt
+# Step 4 : Hop into VScode and open keywords.txt
 
 - Enter the keyword that you want the tool to autosearch and press save
 
-# Step 7 : Hop back into terminal and run main.py
+# Step 5 : Hop back into terminal and run main.py
 
 Command: python main.py
 
