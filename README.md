@@ -1,83 +1,92 @@
-# AutoCrawler
-Google, Naver multiprocess image crawler (High Quality & Speed & Customizable)
+# AutoCrawler_basic_tutorial
 
-![](docs/animation.gif)
+Git clone auto crawl image is an automated tool for finding images by keywords.
 
-# How to use
+# Step 1 : Download git 
 
-1. Install Chrome
+For Windows : https://github.com/git-for-windows/git/releases/download/v2.39.0.windows.2/Git-2.39.0.2-64-bit.exe
 
-2. pip install -r requirements.txt
+For Mac : 
 
-3. Write search keywords in keywords.txt
+Homebrew
+Install homebrew if you don't already have it, then:
+$ brew install git
 
-4. **Run "main.py"**
+MacPorts
+Install MacPorts if you don't already have it, then:
+$ sudo port install git
 
-5. Files will be downloaded to 'download' directory.
+Xcode
+Apple ships a binary package of Git with Xcode.
 
+Binary installer
+Tim Harper provides an installer for Git. The latest version is 2.33.0, which was released over 1 year ago, on 2021-08-30.
 
-# Arguments
-usage:
-```
-python3 main.py [--skip true] [--threads 4] [--google true] [--naver true] [--full false] [--face false] [--no_gui auto] [--limit 0]
-```
+Building from Source
+If you prefer to build from source, you can find tarballs on kernel.org. The latest version is 2.39.0.
 
-```
---skip true        Skips keyword if downloaded directory already exists. This is needed when re-downloading.
+Installing git-gui
+If you would like to install git-gui and gitk, git's commit GUI and interactive history browser, you can do so using homebrew
+$ brew install git-gui
 
---threads 4        Number of threads to download.
+For Linux :
 
---google true      Download from google.com (boolean)
+ apt-get install git
+For Ubuntu, this PPA provides the latest stable upstream Git version
 
---naver true       Download from naver.com (boolean)
+ add-apt-repository ppa:git-core/ppa # apt update; apt install git
+Fedora
+ yum install git (up to Fedora 21)
+ dnf install git (Fedora 22 and later)
+Gentoo
+ emerge --ask --verbose dev-vcs/git
+Arch Linux
+ pacman -S git
+openSUSE
+ zypper install git
+Mageia
+ urpmi git
+Nix/NixOS
+ nix-env -i git
+FreeBSD
+ pkg install git
+Solaris 9/10/11 (OpenCSW)
+ pkgutil -i git
+Solaris 11 Express
+ pkg install developer/versioning/git
+OpenBSD
+ pkg_add git
+Alpine
+$ apk add git
+Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.
+RHEL and derivatives typically ship older versions of git. You can download a tarball and build from source, or use a 3rd-party repository such as the IUS Community Project to obtain a more recent version of git.
 
---full false       Download full resolution image instead of thumbnails (slow)
+Slitaz
+$ tazpkg get-install git
 
---face false       Face search mode
+# Step 2 : Open terminal 
 
---no_gui auto      No GUI mode. (headless mode) Acceleration for full_resolution mode, but unstable on thumbnail mode.
-                   Default: "auto" - false if full=false, true if full=true
-                   (can be used for docker linux system)
-                   
---limit 0          Maximum count of images to download per site. (0: infinite)
---proxy-list ''    The comma separated proxy list like: "socks://127.0.0.1:1080,http://127.0.0.1:1081".
-                   Every thread will randomly choose one from the list.
-```
+ 1: Create a new folder named datatools
 
+ 2: cd , forward to the datatools driver
 
-# Full Resolution Mode
+ 3: download the link below
 
-You can download full resolution image of JPG, GIF, PNG files by specifying --full true
+-  https://github.com/YoongiKim/AutoCrawler.git
 
-![](docs/full.gif)
+Command : git clone pip https://github.com/YoongiKim/AutoCrawler.git
 
+- Once you have done that, a Folder named AutoCrawler can be seen
 
+# Step 3 : Install all of the requirements.txt
 
-# Data Imbalance Detection
+- Command : pip install -r requirements.txt 
 
-Detects data imbalance based on number of files.
+# Step 4 : Hop into VScode and open keywords.txt
 
-When crawling ends, the message show you what directory has under 50% of average files.
+- Enter the keyword that you want the tool to autosearch and press save
 
-I recommend you to remove those directories and re-download.
+# Step 5 : Hop back into terminal and run main.py
 
+- Command: python main.py
 
-# Remote crawling through SSH on your server
-
-```
-sudo apt-get install xvfb <- This is virtual display
-
-sudo apt-get install screen <- This will allow you to close SSH terminal while running.
-
-screen -S s1
-
-Xvfb :99 -ac & DISPLAY=:99 python3 main.py
-```
-
-# Customize
-
-You can make your own crawler by changing collect_links.py
-
-# Issues
-
-As google site consistently changes, please make issues if it doesn't work.
