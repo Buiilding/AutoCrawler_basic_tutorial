@@ -64,12 +64,31 @@ RHEL and derivatives typically ship older versions of git. You can download a ta
 Slitaz
 $ tazpkg get-install git
 
+# Step 2 : Open terminal 
 
+# Step 3 : Create a new folder named datatools
 
-# Step 2 : Create a new folder named datatools
+# Step 4: cd , forward to the datatools driver
 
+# Step 5 : download the link below
 
+-  https://github.com/YoongiKim/AutoCrawler.git
 
+Command : git clone pip <link>
+
+- Once you have done that, a Folder named AutoCrawler can be seen
+
+# Step 5 : Install all of the requirements.txt
+
+Command : pip install -r requirements.txt 
+
+# Step 6 : Hop into VScode and open keywords.txt
+
+- Enter the keyword that you want the tool to autosearch and press save
+
+# Step 7 : Hop back into terminal and run main.py
+
+Command: python main.py
 
 
 
