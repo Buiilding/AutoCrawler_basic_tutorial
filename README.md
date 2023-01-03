@@ -74,7 +74,7 @@ $ tazpkg get-install git
 
 -  https://github.com/YoongiKim/AutoCrawler.git
 
-Command : git clone pip <link>
+Command : git clone pip https://github.com/YoongiKim/AutoCrawler.git
 
 - Once you have done that, a Folder named AutoCrawler can be seen
 
